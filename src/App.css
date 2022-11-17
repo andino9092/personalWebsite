@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  background-color: white;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.paperTemplate.aboutMe{
+  display: flex;
+  background-color: white;
+  color: black;
+}
+
+.downArrowContainer{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  animation: floating 2s ease infinite;
+  animation-fill-mode: none;
+  width: 35px;
+  height: 35px;
+}
+
+.downArrowContainer.secondArrow{
+  padding: 25px;
+  position: absolute;
+}
+
+.downArrowContainer:hover{
+  cursor: pointer;
+}
+
+.linkToWorkshop{
+  padding: 5px;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.downArrow{
+  width: 15px;
+  height: 15px;
+  border: solid black;
+  border-width: 0px 2px 2px 0px;
+  opacity: 50%;
+  transform: rotate(-45deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.downArrow.leftVariant{
+  transform: rotate(135deg);
+  border: solid black;
+  border-width: 0px 2px 2px 0px;
+}
+
+.introduction{
+  width: 1000px;
+  height: 400px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.paperTemplate{
+  width: 750px;
+  height: auto;
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.paperTemplate.projects{
+  background-color: white;
+  color: black;
+  display: flex;
+}
+
+.workshop{
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+.app{
+  width: 100%;
+  height: 100%;
+}
+
+.navText{
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.greenBars{
+  top: 30px;
+  width: auto;
+  height: 100px;
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.bars1{
+  width: 10px;
+  top: 10px;
+  height: 1px;
+  background-color: green;
+  animation: bar1 .5s ease-in infinite;
+  position: relative;
+  transform: rotatex(180deg);
+  transform-origin: top;
+  bottom: 0px;
+}
+
+.bars2{
+  width: 10px;
+  top: 10px;
+  height: 0px;
+  background-color: green;
+  animation: bar2 .5s ease-in infinite;
+  position: relative;
+  transform: rotatex(180deg);
+  transform-origin: top;
+  bottom: 0px;
+}
+
+.bars3{
+  width: 10px;
+  top: 10px;
+  height: 0px;
+  background-color: green;
+  animation: bar3 .5s ease-in infinite;
+  position: relative;
+  transform: rotatex(180deg);
+  transform-origin: top;
+  bottom: 0px;
+}
+
+@keyframes bar1 {
+  20%{
+    height: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  40%{
+    height: 15px;
+  }
+  60%{
+    height: 17px;
   }
 }
+
+@keyframes bar2 {
+  20%{
+    height: 15px;
+  }
+  40%{
+    height: 25px;
+  }
+  60%{
+    height: 13px;
+  }
+}
+
+@keyframes bar3 {
+  20%{
+    height: 19px;
+  }
+  40%{
+    height: 13px;
+  }
+  60%{
+    height: 21px;
+  }
+}
+
+@keyframes floating {
+  0%{
+    transform: translateX(-7px);
+  }
+  50%{
+    transform: translateX(14px);
+  }
+  100%{
+    transform: translateX(-7px);
+  }
+}
+
+@keyframes rebound {
+  0%{
+    transform: translateY(-7px);
+  }
+  50%{
+    transform: translateY(14px);
+  }
+  100%{
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes moveLeft {
+  0%{
+    left: 0px;
+  }
+  100%{
+    left: 1000px;
+  }
+}
+
+.test{
+  animation-name: moveLeft, rebound;
+  animation-duration: 1.5s, .5s;
+  animation-delay: 0s, 1.5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), ease-out;
+  animation-fill-mode: forwards, forwards;
+  animation-iteration-count: 1, 1;
+}
+

@@ -1,0 +1,31 @@
+.projectHeading{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    padding: 25px;
+    text-align: left;
+}
+
+ul.aboutMe{
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+}
+
+li.aboutMe{
+    position: relative;
+}
+
+li.aboutMe p{
+    font-size: small;
+}
+
+/* li.aboutMe::before{
+    color: red;
+    position: absolute;
+    content: attr(text);
+    right: 1px;
+} */
