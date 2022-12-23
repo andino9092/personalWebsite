@@ -1,1 +1,1 @@
-This is my personal website (in developement)
+This is my personal website
