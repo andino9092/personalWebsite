@@ -1,0 +1,46 @@
+.contact{
+    position: absolute;
+    float: right;
+    right: 20px;
+}
+
+.contact:hover{
+    cursor: pointer;
+}
+
+.SideBar{
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    gap: 20px;
+}
+
+.drawerContact{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.drawerItem{
+    flex: auto;
+}
+
+.email:hover{
+    color:red;
+}
+.music:hover{
+    color:green;
+}
+.insta:hover{
+    color:violet;
+}
+.linkedin:hover{
+    color:blue;
+}
+
+
+.SideBar a{
+    color: black;
+}
+
+

@@ -3,9 +3,8 @@
     position: relative;
     width: 100%;
     height: auto;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    padding: 25px;
+    font-family: Optima, sans-serif;
+    font-size: 2rem;
     text-align: left;
 }
 
@@ -20,7 +19,7 @@ li.aboutMe{
 }
 
 li.aboutMe p{
-    font-size: small;
+    font-size:medium;
 }
 
 /* li.aboutMe::before{
@@ -29,3 +28,11 @@ li.aboutMe p{
     content: attr(text);
     right: 1px;
 } */
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}

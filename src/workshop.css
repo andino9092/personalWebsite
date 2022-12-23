@@ -9,22 +9,23 @@
 }  
 
 .lineContainer{
-    width: 100px;
-    height: 500px;
+    width: 25px;
+    height: 1000px;
     transform: rotate(45deg);
     overflow: hidden;
-}
-
-.lineContainer.rotate45{
-    transform: rotate(90deg);
+    position: absolute;
+    z-index: 1;
 }
 
 @keyframes dissappear {
     0%{
-       top: 200px;
+       top: 1000px;
+    }
+    50%{
+       top: 0px;
     }
     100%{
-       top: -500px;
+       top: -2000px;
     }
 }
 
@@ -32,16 +33,15 @@
     display: flex;
 }
 
-.line{
-    width: 75px;
-    height: 500px;
-    opacity: .5;
+.disappearBox{
+    transform: rotate(90deg);
+    background-color: white;
     position: absolute;
-    border-radius: 50px;
-    background-color: green;
-    border-width: 1px;
-    animation: dissappear 1s ease-out infinite;
+    z-index: 1;
+    height: 200px;
+    width: 200px;
 }
+
 
 .split{
     height: 0px;

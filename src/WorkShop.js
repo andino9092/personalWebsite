@@ -25,17 +25,6 @@ export default function WorkShop(props){
                         perhaps for future use.
                     </div>
                 </div>
-                <div className='content'>
-                    <div className='overflow'>
-                        <div className="inner">
-                            Words Words Words
-
-                        </div>
-                        <div className="outer">
-                            Words Words Words
-                        </div>
-                    </div>
-                </div>
                 <div className='decorationBackground'>
                     <DecorationLines/>
                 </div>
