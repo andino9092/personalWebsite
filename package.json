@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://andino9092.github.io/react-gh-pages",
+  "homepage": "https://andino9092.github.io/personalWebsite",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
