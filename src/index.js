@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import WorkShop from './WorkShop';
+import NewApp from './NewApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}/>
       <Route path="/workshop" element={<WorkShop/>}/>
+      <Route path="/newInterface" element={<NewApp/>}/>
     </Routes>
   </BrowserRouter>
 );

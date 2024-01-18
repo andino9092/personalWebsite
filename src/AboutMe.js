@@ -10,7 +10,7 @@ export default function AboutMe(props){
                     <li className="aboutMe">
                         Projects
                         <p>
-                            <a href="https://github.com/andino9092/ChoreoTool">ChoreoTool</a> is a tool for choreographers to save and edit formations on stage. It is
+                            <a href="https://choreotool.vercel.app/login">ChoreoTool</a> is a tool for choreographers to save and edit formations on stage. It is
                             synced to their Spotify account for easy access. 
                         </p>
                         <p>
